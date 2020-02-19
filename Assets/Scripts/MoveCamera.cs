@@ -36,8 +36,36 @@ public class MoveCamera : MonoBehaviour
             transform.position += new Vector3(1, 0f, 0f);
         }
 
-        
-        
+        if(Input.GetKey("o"))
+        {
+            transform.position += new Vector3(0f, 1, 0f);
+        }
+
+        if(Input.GetKey("l"))
+        {
+            transform.position += new Vector3(0f, -1, 0f);
+        }
+
+        if (Input.GetKey("up"))
+        {
+            transform.Rotate(new Vector3(-1, 0f, 0f));
+        }
+
+        if (Input.GetKey("down"))
+        {
+            transform.Rotate(new Vector3(1, 0f, 0f));
+        }
+
+        if (Input.GetKey("left"))
+        {
+            transform.Rotate(new Vector3(0f, -1, 0f));
+        }
+
+        if (Input.GetKey("right"))
+        {
+            transform.Rotate(new Vector3(0f, 1, 0f));
+        }
+
     }
 
 }
